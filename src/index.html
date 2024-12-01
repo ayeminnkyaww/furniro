@@ -4,31 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Furniro</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
-    <header>
+    <header class="px-8 py-2 bg-white">
       <nav>
-        <div class="flex justify-between">
-          <div class="flex items-baseline bg-red-300">
-            <img src="../images/logo.png" alt="" class="size-10" />
-            <h1 class="text-2xl font-bold">Furniro</h1>
+        <div class="flex justify-between items-center">
+          <div class="flex items-center w-48">
+            <img
+              src="../images/logo.png"
+              alt=""
+              class="size-10 cursor-pointer"
+            />
+            <a class="inline-block text-2xl font-bold cursor-pointer"
+              >Furniro</a
+            >
           </div>
-          <div class="flex bg-blue-300">
+          <div class="hidden md:flex gap-x-4 md:gap-x-8 lg:gap-x-12">
             <p>
-              <a href="#">Home</a>
+              <a
+                href="#"
+                class="text-slate-900 hover:text-slate-600 font-medium"
+                >Home</a
+              >
             </p>
             <p>
-              <a href="#">Shop</a>
+              <a
+                href="#"
+                class="text-slate-900 hover:text-slate-600 font-medium"
+                >Shop</a
+              >
             </p>
             <p>
-              <a href="#">About</a>
+              <a
+                href="#"
+                class="text-slate-900 hover:text-slate-600 font-medium"
+                >About</a
+              >
             </p>
             <p>
-              <a href="#">Contact</a>
+              <a
+                href="#"
+                class="text-slate-900 hover:text-slate-600 font-medium"
+                >Contact</a
+              >
             </p>
           </div>
-          <div class="bg-orange-300"></div>
+          <div class="flex gap-x-10">
+            <a href="#">
+              <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="#" class="block md:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
         </div>
       </nav>
     </header>
