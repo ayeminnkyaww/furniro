@@ -7,7 +7,7 @@
 
 @layer {
   .product-container {
-    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-y-5;
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-10 gap-y-5;
   }
 
   .product-controls {
