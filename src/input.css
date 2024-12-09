@@ -5,7 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto;
+  }
+
   .product-container {
     @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-10 gap-y-5;
   }
