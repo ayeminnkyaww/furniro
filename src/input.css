@@ -1,3 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .product-container {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-10 gap-y-5;
+  }
+
+  .product-controls {
+    @apply flex justify-center;
+  }
+
+  .product-container-hidden {
+    @apply hidden md:flex justify-center;
+  }
+
+  .product-card {
+    @apply max-w-64 bg-slate-200;
+  }
+
+  .product-photo-controls {
+    @apply w-full bg-contain;
+  }
+
+  .product-photo {
+    @apply w-full;
+  }
+
+  .product-name {
+    @apply text-lg font-semibold;
+  }
+
+  .product-price {
+    @apply font-medium;
+  }
+
+  .discount {
+    @apply text-sm font-light;
+  }
+
+  .tags {
+    @apply absolute top-3 right-3 text-white text-sm rounded-full size-10 text-center content-center;
+  }
+
+  .discount-tag {
+    @apply bg-red-500;
+  }
+
+  .new-tag {
+    @apply bg-green-500;
+  }
+}
